@@ -8,9 +8,18 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 
+import { useSectionInView } from "@/lib/hooks";
+
 const Intro = () => {
+
+  const {ref} = useSectionInView("Home", 0.5)
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      ref={ref}
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      id="home"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -84,14 +93,18 @@ const Intro = () => {
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a 
-        href="https://www.linkedin.com/in/muhammed-rameez-26b794202/" target="_blank"
-        className="bg-white p-4 text-gray-700 flex items-center rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10">
+        <a
+          href="https://www.linkedin.com/in/muhammed-rameez-26b794202/"
+          target="_blank"
+          className="bg-white p-4 text-gray-700 flex items-center rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
+        >
           <BsLinkedin />
         </a>
-        <a 
-        href="https://github.com/rameezrz" target="_blank"
-        className="bg-white p-4 text-gray-700 flex items-center rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition border border-black/10">
+        <a
+          href="https://github.com/rameezrz"
+          target="_blank"
+          className="bg-white p-4 text-gray-700 flex items-center rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition border border-black/10"
+        >
           <FaGithubSquare />
         </a>
       </motion.div>
