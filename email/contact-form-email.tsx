@@ -14,10 +14,10 @@ import { Tailwind } from "@react-email/tailwind";
 
 type ContactFormEmailProps = {
   message: string;
-  email: string
+  senderEmail: string
 };
 
-const ContactFormEmail = ({ message, email }: ContactFormEmailProps) => {
+const ContactFormEmail = ({ message, senderEmail }: ContactFormEmailProps) => {
   return (
     <Html>
       <Head />
@@ -31,7 +31,7 @@ const ContactFormEmail = ({ message, email }: ContactFormEmailProps) => {
               </Heading>
               <Text>{message}</Text>
               <Hr/>
-              <Text>The Sender email is : {email}</Text>
+              <Text>The Sender email is : {senderEmail}</Text>
             </Section>
           </Container>
         </Body>
