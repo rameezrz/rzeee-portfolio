@@ -11,10 +11,11 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-const Intro = () => {
+import dp from "@/public/dp.jpeg";
 
-  const {ref} = useSectionInView("Home", 0.5)
-  const {setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
+const Intro = () => {
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -33,9 +34,7 @@ const Intro = () => {
             }}
           >
             <Image
-              src={
-                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
-              }
+              src={dp}
               alt="Rzeee Potrait"
               width="192"
               height="192"
@@ -83,16 +82,16 @@ const Intro = () => {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={()=>{
-            setActiveSection("Contact")
-            setTimeOfLastClick(Date.now())
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
           }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1.5 transition" />
         </Link>
         <a
-          href="/CV.pdf"
+          href="/muhammed_rameez_resume.pdf"
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition border border-black/10 dark:bg-white/10 dark:text-white/60"
         >
@@ -100,7 +99,7 @@ const Intro = () => {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
-          href="https://www.linkedin.com/in/muhammed-rameez-26b794202/"
+          href="https://www.linkedin.com/in/rzeee"
           target="_blank"
           className="bg-white p-4 text-gray-700 flex items-center rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10 dark:bg-white/10 dark:text-white/60"
         >
