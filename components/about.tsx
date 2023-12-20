@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 const About = () => {
-  const {ref} = useSectionInView("About")
+  const { ref } = useSectionInView("About");
 
   return (
     <motion.section
@@ -21,30 +21,32 @@ const About = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
+        A recent graduate with a degree in{" "}
+        <span className="font-medium">Computer Science</span>, I decided to
+        merge my passion for technology and problem-solving. I immersed myself
+        in a rigorous coding bootcamp, mastering{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        <span className="italic">My thrill in programming</span> lies in
+        unraveling complex problems and devising effective solutions. The
+        technologies at the core of my stack include{" "}
         <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
+          React, Node.js, Express, and MongoDB
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . Proficient in TypeScript and experienced in Microservices frameworks,
+        I am actively seeking opportunities to apply my skills in a{" "}
+        <span className="font-medium">full-time software developer role</span>.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">Outside the coding realm</span>, I indulge in
+        my passion for creativity and continuous learning. Whether it's coding
+        or exploring new interests, I find joy in the process. I also have a
+        deep fascination for{" "}
+        <span className="font-medium">entrepreneurship</span>, specifically in
+        applying technological solutions to business challenges. I am
+        dedicatedly honing my design skills, with a focus on UI/UX. Beyond the
+        screen, you'll find me hanging out with friends, enjoying movies, and
+        cherishing moments with my furry companion.
       </p>
     </motion.section>
   );
